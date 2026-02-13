@@ -228,25 +228,34 @@ form textarea {
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+@media(max-width:768px){
 
-    .hero-content h1 {
-        font-size: 1.6rem;
+    nav {
+        padding: 15px;
     }
 
-    .hero-content p {
-        font-size: 1rem;
+    nav ul {
+        flex-direction: row;
+        gap: 15px;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    .btn {
-        padding: 10px 20px;
+    nav ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
         font-size: 14px;
     }
 
-    .hero-image img {
-        max-width: 250px;
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
     }
 }
+
 /* Premium Project Cards */
 .project-card {
     margin-top: 30px;
@@ -319,3 +328,4 @@ form textarea {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
