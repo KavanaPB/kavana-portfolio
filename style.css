@@ -228,17 +228,22 @@ form textarea {
 }
 
 /* Mobile */
-@media(max-width:768px){
+/* Clean Mobile Navbar Fix */
+@media (max-width: 768px) {
 
     nav {
-        padding: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
     }
 
     nav ul {
         flex-direction: row;
-        gap: 15px;
+        gap: 12px;
         overflow-x: auto;
         white-space: nowrap;
+        max-width: 75%;
     }
 
     nav ul::-webkit-scrollbar {
@@ -246,7 +251,7 @@ form textarea {
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .hero {
@@ -328,4 +333,5 @@ form textarea {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 
